@@ -1,7 +1,7 @@
 #!/bin/bash
 
 cd mediapipe_master
-FILES_DIR= "../templates"
+FILES_DIR="../templates"
 INDEX_FILENAME= "../knift_index"
 
 echo "Extracting features from $FILES_DIR directory"
