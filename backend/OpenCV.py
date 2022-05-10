@@ -1,5 +1,6 @@
 from json import detect_encoding
 from typing import final
+from matplotlib.pyplot import cla
 import numpy as np
 import cv2 as cv
 import os
@@ -52,7 +53,7 @@ while True:
     imgOriginal = img2.copy()
     img2 = cv.cvtColor(img2, cv.COLOR_BGR2GRAY)
 
-    find = findID(img2, desList)
+    id = findID(img2, desList)
     if id != -1:
         cv.putText(imgOriginal, classNames[id], (50,50), cv.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
 
