@@ -5,7 +5,7 @@ import numpy as np
 import cv2 as cv
 import os
 
-path = "queryImage"
+path = "queryimage"
 orb = cv.ORB_create()
 
 images = []
@@ -16,6 +16,8 @@ for cl in myList:
     images.append(imgCur)
     classNames.append(os.path.splitext(cl)[0])
 
+#separar funciones y mayusculas
+#unit
 def findDes(images):
     desList = []
     for img in images:

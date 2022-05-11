@@ -1,6 +1,6 @@
 import streamlit as st
 from PIL import Image
-from backend import OpenCV
+from backend import featuresimg
 
 
 def main_loop():
