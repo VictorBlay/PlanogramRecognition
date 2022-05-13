@@ -1,25 +1,25 @@
 from json import detect_encoding
 from typing import final
-from matplotlib.pyplot import cla
+import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 import os
+from funciones import find_des, find_id
 
 
-path = "queryimage"
-imagenes = [imagenes for directorio, subdirectorio, imagenes in os.walk(path)]
-direct = [subdirectorio for directorio, subdirectorio, imagenes in os.walk(path)]
+deslist = find_des(images) 
+
+cap = cv2.imread('queryimage/hyabak/hyabak 2.jpg')
 
 
-aplanar_lista = lambda lista: [elemento for sublista in lista for elemento in sublista]
+while True:
 
+    img_original = cap.copy()
+    cap = cv2.cvtColor(cap, cv2.COLOR_BGR2GRAY)
 
-images = []
-class_names = []
-list_img = aplanar_lista(imagenes)
-list_dir = aplanar_lista(direct)
-for dir in list_dir:
-    for cl in list_img:
-        img_cur = cv2.imread(f"{path}/{dir}/{cl}", 0)
-        images.append(img_cur)
-    class_names.append(os.path.splitext(dir)[0])
+    id = find_id(cap, deslist)
+    if id != -1:
+        cv2.putText(img_original, class_names[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+
+    cv2.imshow("img2", img_original)
+    cv2.waitKey(0)
