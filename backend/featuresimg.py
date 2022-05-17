@@ -5,12 +5,15 @@ import numpy as np
 import cv2
 import os
 from funciones import find_des, find_id
+from prepare_data import prepare_data
 
 
-deslist = find_des(images) 
 
-cap = cv2.imread('queryimage/hyabak/hyabak 2.jpg')
 
+cap = cv2.imread(prepare_data("./queryimage"))
+print(cap)
+
+deslist = find_des(cap) 
 
 while True:
 
