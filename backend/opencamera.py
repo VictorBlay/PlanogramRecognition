@@ -1,10 +1,20 @@
 import cv2
 from funciones import find_des, find_id
-from featuresimg import images, class_names
+from prepare_data import prepare_data
 
-deslist = find_des(images) 
+
+ruta_img = [i[0] for i in prepare_data("./queryimage")]
+carpetas = [i[1] for i in prepare_data("./queryimage")]
+
+imagenes = []
+for i in ruta_img:
+    cap = cv2.imread(i)
+    imagenes.append(cap)
+print(imagenes)
 
 cap = cv2.VideoCapture(0)
+
+deslist = find_des(imagenes)
 
 while True:
 
@@ -14,7 +24,7 @@ while True:
 
     id = find_id(img2, deslist)
     if id != -1:
-        cv2.putText(img_original, class_names[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+        cv2.putText(img_original, carpetas[0], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
 
     cv2.imshow("img2", img_original)
     cv2.waitKey(1)

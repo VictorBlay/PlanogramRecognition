@@ -33,12 +33,13 @@ def prepare_data(images_path):
     for i in x:
         y = (i[11 : ])
         z = (y[:-6])
-        print(z)
         carpetas.append(z)
     
     result = convert(x, carpetas)
     #result = zip(a, b, c, d)
     return result
+
+
     
     #deovlver array de tuplas de dos elementos cada tupla, 1er nombre carpeta, 2n la ruta images
     
