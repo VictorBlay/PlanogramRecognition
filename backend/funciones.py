@@ -11,6 +11,7 @@ def find_des(images):
 
 def find_id(img, des_list, thres = 15):
     kp2, des2 = orb.detectAndCompute(img, None)
+    #print(kp2[0].pt, kp2[1].pt)
     bf = cv2.BFMatcher()
     match_list = []
     final_val = -1
