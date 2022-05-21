@@ -1,4 +1,5 @@
 import cv2
+from description import description_product
 from funciones import find_des, find_id
 from prepare_data import prepare_data
 
@@ -23,7 +24,8 @@ while True:
 
     id = find_id(img2, deslist)
     if id != -1:
-        cv2.putText(img_original, carpetas[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+        text_product = cv2.putText(img_original, carpetas[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+        text_product
 
     cv2.imshow("img2", img_original)
     cv2.waitKey(1)
