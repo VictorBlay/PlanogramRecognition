@@ -1,4 +1,5 @@
 import cv2
+from backend.prepare_data import prepare_data
 
 orb = cv2.ORB_create()
 
@@ -29,6 +30,18 @@ def find_id(img, des_list, thres = 15):
         if max(match_list) > thres:
             final_val = match_list.index(max(match_list))
     return final_val
+
+def imagenes(path):
+    ruta_img = [i[0] for i in prepare_data(path)]
+    imagenes = []
+    for i in ruta_img:
+        cap = cv2.imread(i)
+        imagenes.append(cap)
+    return imagenes
+
+def car_prod(path):
+    carpetas = [i[1] for i in prepare_data(path)]
+    return carpetas
 
 def convert(*args):
     """

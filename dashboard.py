@@ -3,49 +3,49 @@ from cv2 import find4QuadCornerSubpix
 import streamlit as st
 from PIL import Image
 import cv2
+from backend import funciones, description
+
+path = "./backend/queryimage"
 
 page = st.sidebar.selectbox('Categoria gestionada ', 
-            ['Dolor',
+            ['Salud Ocular',
+            'Dolor',
             'Higiene Bucodental'
             'Insomnio',
             'Invierno',
             'Mosquitos',
             'Piojos',
             'Probioticos',
-            'Salud Ocular',
+            'X',
             'Solares'])
 
 if page == 'Salud Ocular':
     def main_loop():
         st.title("OpenCV Demo App")
         st.subheader("Esta app te permite saber el uso de los productos de parafarmacia que podras encontrar en nuestras oficinas de farmacia!")
-        st.text("We use OpenCV and Streamlit for this demo")
+        st.text("Usamos OpenCV y Streamlit para esta demo")
 
-        st.title("Webcam Live Feed")
-        run = st.checkbox('Run')
+        st.title("Escanear Producto")
+        run = st.checkbox('Encender camera')
         FRAME_WINDOW = st.image([])
         camera = cv2.VideoCapture(0)
-
+        deslist = funciones.find_des(funciones.imagenes(path))
+        
         while run:
+            print(deslist)
             _, frame = camera.read()
+            img_original = frame.copy()
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             FRAME_WINDOW.image(frame)
+
+            id = funciones.find_id(frame, deslist)
+            if id != -1:
+                cv2.putText(img_original, funciones.car_prod(path)[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
+                #print(text_product)
+                #st.text(description.description_product(text_product))
+
         else:
-            st.write('Stopped')
-        
-
-        original_image = Image.open(image_file)
-        original_image = np.array(original_image)
-
-        processed_image = blur_image(original_image, blur_rate)
-        processed_image = brighten_image(processed_image, brightness_amount)
-
-        if apply_enhancement_filter:
-            processed_image = enhance_details(processed_image)
-
-        st.text("Original Image vs Processed Image")
-        st.image([original_image, processed_image])
-
+            st.write('Apagada')
 
     if __name__ == '__main__':
         main_loop()

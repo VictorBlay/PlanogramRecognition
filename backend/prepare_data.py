@@ -9,7 +9,7 @@ def prepare_data(images_path):
     x = [os.path.normpath(i) for i in glob.glob(m, recursive=True)]
     carpetas = []
     for i in x:
-        medicamento = i.split("\\")[1]
+        medicamento = i.split("\\")[2]
         carpetas.append(medicamento)
     
     result = list(zip(x, carpetas))

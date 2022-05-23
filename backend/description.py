@@ -1,5 +1,5 @@
 import json
-from data_mongo.get_data_mongo import get_data
+from backend.data_mongo.get_data_mongo import get_data
 from bson import json_util
 
 def description_product(product):

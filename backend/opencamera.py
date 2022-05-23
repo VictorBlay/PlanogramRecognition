@@ -1,6 +1,9 @@
+from multiprocessing.spawn import prepare
 import cv2
 from funciones import find_des, find_id
 from prepare_data import prepare_data
+
+path = "./queryimage"
 
 def open_camera(path):
     ruta_img = [i[0] for i in prepare_data(path)]
@@ -28,3 +31,5 @@ def open_camera(path):
 
         cv2.imshow("img2", img_original)
         cv2.waitKey(1)
+
+open_camera(path)
