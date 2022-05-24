@@ -5,6 +5,7 @@ from PIL import Image
 import cv2
 from backend import funciones, description
 
+
 path = "./backend/queryimage"
 
 page = st.sidebar.selectbox('Categoria gestionada ', 
@@ -30,20 +31,19 @@ if page == 'Salud Ocular':
         FRAME_WINDOW = st.image([])
         camera = cv2.VideoCapture(0)
         deslist = funciones.find_des(funciones.imagenes(path))
-        
+        desc = st.empty()
+
         while run:
-            print(deslist)
             _, frame = camera.read()
-            img_original = frame.copy()
             frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-            FRAME_WINDOW.image(frame)
-
             id = funciones.find_id(frame, deslist)
-            if id != -1:
-                cv2.putText(img_original, funciones.car_prod(path)[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,0,255), 1)
-                #print(text_product)
-                #st.text(description.description_product(text_product))
+            
 
+            if id != -1:
+                cv2.putText(frame, funciones.car_prod(path)[id], (50,50), cv2.FONT_HERSHEY_COMPLEX, 1, (0,178,169), 1)
+                desc.text(description.description_product(funciones.car_prod(path)[id]))
+            FRAME_WINDOW.image(frame)
+            
         else:
             st.write('Apagada')
 

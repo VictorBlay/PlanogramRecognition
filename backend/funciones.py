@@ -25,7 +25,7 @@ def find_id(img, des_list, thres = 15):
                     good.append([m])
             match_list.append(len(good))
     except:
-        pass
+        print("error")
     if len(match_list) != 0:
         if max(match_list) > thres:
             final_val = match_list.index(max(match_list))
