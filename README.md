@@ -1,6 +1,6 @@
 # PlanogramRecognition
 Final Project for Bootcamp (Big Data and Machine Learning) at Core Code School!
-![Alt text](/data_readme/Planograma.jpg)
+![Alt text](/backend/data_readme/Planograma.jpg)
 
 ## Table of Contents
 1. [General Info](#general-info)
@@ -19,3 +19,8 @@ Final Project for Bootcamp (Big Data and Machine Learning) at Core Code School!
 ## Collaboration
 
 ## FAQs
+
+## 🔗 Links
+[![portfolio](https://github.com/VictorBlay?tab=repositories)]
+[![linkedin](https://www.linkedin.com/in/víctor-blay-garcía-4bb048b1/)](https://www.linkedin.com/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
