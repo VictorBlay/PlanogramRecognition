@@ -1,15 +1,12 @@
-import json
-from api.data_mongo.get_data_mongo import get_data
-from bson import json_util
+import requests
+
+url ="https://pharmacorecode.herokuapp.com"
 
 def description_product(product):
-    res = get_data("description", {"Producto":product}, {'Descripcion':1,'_id':0})
-    return res
+    return requests.get(url+f"/{product}/Description").json()[0]
 
 def laboratory(product):
-    res = get_data("description", {"Producto":product}, {'Laboratorio':1,'_id':0})
-    return res
+    return requests.get(url+f"/{product}/Laboratory").json()
 
 def use_product(product):
-    res = get_data("description", {"Producto":product}, {'Uso':1,'_id':0})
-    return res
+    return requests.get(url+f"/{product}/Use").json()
