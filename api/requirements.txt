@@ -1,0 +1,6 @@
+uvicorn==0.17.6
+fastapi==0.78.0
+pymongo==4.1.1
+python-dotenv==0.20.0
+dnspython==2.2.1
+certifi==2021.10.8

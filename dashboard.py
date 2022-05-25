@@ -11,13 +11,12 @@ path = "./backend/queryimage"
 page = st.sidebar.selectbox('Categoria gestionada ', 
             ['Salud Ocular',
             'Dolor',
-            'Higiene Bucodental'
+            'Higiene Bucodental',
             'Insomnio',
             'Invierno',
             'Mosquitos',
             'Piojos',
             'Probioticos',
-            'X',
             'Solares'])
 
 if page == 'Salud Ocular':
