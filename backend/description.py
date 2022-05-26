@@ -6,7 +6,7 @@ def description_product(product):
     return requests.get(url+f"/{product}/Description").json()[0]
 
 def laboratory(product):
-    return requests.get(url+f"/{product}/Laboratory").json()
+    return requests.get(url+f"/{product}/Laboratory").json()[0]
 
 def use_product(product):
-    return requests.get(url+f"/{product}/Use").json()
+    return requests.get(url+f"/{product}/Use").json()[0]
