@@ -1,5 +1,6 @@
 # PlanogramRecognition
 Final Project for Bootcamp (Big Data and Machine Learning) at Core Code School!
+![img](https://images.app.goo.gl/Dfyci6f3QUJzf6g49)
 ![Alt text](./backend/data_readme/ecoceutics.jpg)
 
 ## General Info
