@@ -1,15 +1,18 @@
-# PlanogramRecognition
-Final Project for Bootcamp (Big Data and Machine Learning) at Core Code School!
-<img src="/backend/data_readme/ecoceutics.jpg" alt="My cool logo"/>
+# Autoayuda Parafarmacia
+<img src="/backend/data_readme/portada.jpg" alt="My cool logo"/> 
+Proyecto final del Bootcamp (Big Data and Machine Learning) realizado en Core Code School!
 
 ## General Info
+La idea de este proyecto es crear un modelo que sea capaz de reconocer todos los productos de parafarmacia que podemos disponer en muchos puntos de venta y con el, devolver información útil para los consumidores de cada producto escaneado o deseado!
+
+<img src="/backend/data_readme/scan.jpg" alt="My cool logo"/>
 
 ## 🚀 About Me
 I'm a full stack developer...
 
 ## Table of Contents
 1. [Technologies](#Technologies)
-2. [Environment Variables](#Environment Variables)
+2. [Environment Variables](#Environment-Variables)
 3. []
 4. [Process]
 5. [Installation]
@@ -17,6 +20,10 @@ I'm a full stack developer...
 7. [FAQs]
 
 ## Technologies
+Para la realización del proyecto
+<img src="/backend/data_readme/opencv.jpg" alt="My cool logo"/>
+
+
 
 ## Environment Variables
 
@@ -53,6 +60,8 @@ Start the server
 
 ## Collaboration
 
+<img src="/backend/data_readme/corecode.jpg" alt="My cool logo"/>
+
 ## FAQs
 #### Question 1
 
@@ -73,7 +82,7 @@ Answer 2
 If you have any feedback, please reach out to us at fake@fake.com
 
 ## 🛠 Skills
-Javascript, HTML, CSS...
+Python, MongoDB, MySQL...
 
 ## 🔗 Links
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/VictorBlay?tab=repositories)
