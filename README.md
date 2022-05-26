@@ -1,17 +1,20 @@
 # PlanogramRecognition
 Final Project for Bootcamp (Big Data and Machine Learning) at Core Code School!
-![Alt text](/backend/data_readme/Planograma.jpg)
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+<img src="/backend/data_readme/ecoceutics.jpg" alt="My cool logo"/>
+
+## General Info
+
+## 🚀 About Me
+I'm a full stack developer...
 
 ## Table of Contents
-1. [General Info](#general-info)
-3. [Technologies]
+1. [Technologies](#Technologies)
+2. [Environment Variables](#Environment Variables)
+3. []
 4. [Process]
 5. [Installation]
 6. [Collaboration]
 7. [FAQs]
-
-## General Info
 
 ## Technologies
 
@@ -68,9 +71,6 @@ Answer 2
 ## Feedback
 
 If you have any feedback, please reach out to us at fake@fake.com
-
-## 🚀 About Me
-I'm a full stack developer...
 
 ## 🛠 Skills
 Javascript, HTML, CSS...
