@@ -14,11 +14,11 @@ Soy una persona que trabaja en el mundo empresarial y siempre me ha gustado la t
 1. [Technologies](#Technologies)
 2. [Installation](#Installation)
 3. [Roadmap](#Roadmap)
-4. [FAQ's](#FAQ's)
+4. [FAQ's](#FAQs)
 5. [Feedback](#Feedback)
 6. [Collaboration](#Collaboration)
-7. [Skills](#Skills)
-8. [Links](#Links)
+7. [Skills](#🛠 Skills)
+8. [Links](#🔗 Links)
 
 ## Technologies
 Para la realización del proyecto
@@ -58,7 +58,7 @@ Start the server
 
 - Mejorar el modelo.
 
-## FAQ's
+## FAQs
 #### ¿Qué tal tus primeras experiencias con la programación?
 
 
