@@ -8,16 +8,17 @@ La idea de este proyecto es crear un modelo que sea capaz de reconocer todos los
 <img src="/backend/data_readme/scan.jpeg" alt="My cool logo"/>
 
 ## 🚀 About Me
-I'm a full stack developer...
+Soy una persona que trabaja en el mundo empresarial y siempre me ha gustado la tecnología y la transformación digital y por eso, me encuentro aprendiendo mi primer lenguaje de programación Python. Con ello, espero poder formar parte de ella en mi presente y futuro!
 
 ## Table of Contents
 1. [Technologies](#Technologies)
-2. [Environment Variables](#Environment-Variables)
-3. []
-4. [Process]
-5. [Installation]
-6. [Collaboration]
-7. [FAQs]
+2. [Installation](#Installation)
+3. [Roadmap](#Roadmap)
+4. [FAQ's](#FAQ's)
+5. [Feedback](#Feedback)
+6. [Collaboration](#Collaboration)
+7. [Skills](#Skills)
+8. [Links](#Links)
 
 ## Technologies
 Para la realización del proyecto
@@ -26,15 +27,6 @@ Para la realización del proyecto
 <img src="/backend/data_readme/api.png" alt="My cool logo"/>
 
 <img src="/backend/data_readme/opencv.png" alt="My cool logo"/>
-
-
-## Environment Variables
-
-To run this project, you will need to add the following environment variables to your .env file
-
-`API_KEY`
-
-`ANOTHER_API_KEY`
 
 ## Installation
 Clone the project
@@ -60,12 +52,13 @@ Start the server
 ```bash
   npm run start
 ```
+## Roadmap
 
-## Collaboration
-Todo el equipo de Core Code School, gracias!
-<img src="/backend/data_readme/corecode.jpg" alt="My cool logo"/>
+- Añadir una base de datos completa de toda la parafarmacia.
 
-## FAQs
+- Mejorar el modelo.
+
+## FAQ's
 #### ¿Qué tal tus primeras experiencias con la programación?
 
 
@@ -74,15 +67,15 @@ Todo el equipo de Core Code School, gracias!
 
 Answer 2
 
-## Roadmap
 
-- Añadir una base de datos completa de toda la parafarmacia.
-
-- Mejorar el modelo.
 
 ## Feedback
 
 Si tenéis feedback acerca del proyecto, no dudéis en contactar conmigo victorblay3@yahoo.es
+
+## Collaboration
+Todo el equipo de Core Code School, gracias!
+<img src="/backend/data_readme/corecode.jpg" alt="My cool logo"/>
 
 ## 🛠 Skills
 Python, MongoDB, MySQL...
