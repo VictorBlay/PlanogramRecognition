@@ -120,7 +120,6 @@ __init__.py
 
 # mkdocs documentation
 /site
-data_readme/
 queryimage/
 
 # mypy
