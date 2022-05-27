@@ -14,11 +14,10 @@ Soy una persona que trabaja en el mundo empresarial y siempre me ha gustado la t
 1. [Technologies](#Technologies)
 2. [Installation](#Installation)
 3. [Roadmap](#Roadmap)
-4. [FAQ's](#FAQs)
-5. [Feedback](#Feedback)
-6. [Collaboration](#Collaboration)
-7. [Skills](#🛠-Skills)
-8. [Links](#🔗-Links)
+4. [Feedback](#Feedback)
+5. [Collaboration](#Collaboration)
+6. [Skills](#🛠-Skills)
+7. [Links](#🔗-Links)
 
 ## Technologies
 Para la realización del proyecto se han usado estas herramientas o librerias:
@@ -30,45 +29,34 @@ Para la realización del proyecto se han usado estas herramientas o librerias:
 <img src="/backend/data_readme/opencv.png" alt="My cool logo"/>
 
 ## Installation
-Clone the project
+Clonar el proyecto
 
 ```bash
   git clone https://github.com/VictorBlay/PlanogramRecognition.git
 ```
 
-Go to the project directory
+Ir al directorio del proyecto
 
 ```bash
   cd my-project
 ```
 
-Install dependencies
+Instalar dependencias
 
 ```bash
-  npm install
+  conda install requirements.txt
 ```
 
-Start the server
+Empezar con la aplicación
 
 ```bash
-  npm run start
+  python dashboard.py
 ```
 ## Roadmap
 
 - Añadir una base de datos completa de toda la parafarmacia.
 
 - Mejorar el modelo.
-
-## FAQs
-#### ¿Qué tal tus primeras experiencias con la programación?
-
-
-
-#### Question 2
-
-Answer 2
-
-
 
 ## Feedback
 
