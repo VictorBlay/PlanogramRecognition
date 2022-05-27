@@ -17,22 +17,23 @@ Soy una persona que trabaja en el mundo empresarial y siempre me ha gustado la t
 4. [FAQ's](#FAQs)
 5. [Feedback](#Feedback)
 6. [Collaboration](#Collaboration)
-7. [Skills](#🛠 Skills)
-8. [Links](#🔗 Links)
+7. [Skills](#🛠-Skills)
+8. [Links](#🔗-Links)
 
 ## Technologies
-Para la realización del proyecto
+Para la realización del proyecto se han usado estas herramientas o librerias:
+- MongoDB para la base de datos de todos los productos.
 <img src="/backend/data_readme/Mongodb.png" alt="My cool logo"/>
-
+- FastAPI y Heroku para crear la api y poder consumir de ella.
 <img src="/backend/data_readme/api.png" alt="My cool logo"/>
-
+- OpenCV para el modelo y visualización de la demo app.
 <img src="/backend/data_readme/opencv.png" alt="My cool logo"/>
 
 ## Installation
 Clone the project
 
 ```bash
-  git clone https://link-to-project
+  git clone https://github.com/VictorBlay/PlanogramRecognition.git
 ```
 
 Go to the project directory
@@ -83,4 +84,4 @@ Python, MongoDB, MySQL...
 ## 🔗 Links
 [![Portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://github.com/VictorBlay?tab=repositories)
 [![Linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/víctor-blay-garcía-4bb048b1)
-[![Codewars](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.codewars.com/users/VictorBlay)
+[![Codewars](https://img.shields.io/badge/codewars-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://www.codewars.com/users/VictorBlay)
